@@ -2,7 +2,7 @@
 
 InboxIntel is a powerful cold outreach automation tool designed to help users craft, send, and optimize their email campaigns. Built on a modern, serverless stack, it leverages AI to enhance email content and provides analytics to track campaign effectiveness.
 
-**Live Demo:** [**insert deployed link here**]
+**Live Demo:** [https://inboxintel.site]
 
 ---
 
@@ -23,7 +23,7 @@ InboxIntel is a powerful cold outreach automation tool designed to help users cr
 | **Backend**    | Supabase (Auth, PostgreSQL, Edge Functions)   |
 | **Email API**  | Gmail API (OAuth 2.0)                         |
 | **AI/LLM**     | OpenAI API (GPT-4)                            |
-| **Deployment** | Vercel & Supabase CLI    |
+| **Deployment** | Netlify & Supabase CLI    |
 
 ---
 
@@ -40,16 +40,15 @@ This systematic approach allowed for rapid development while ensuring the final 
 
 -   Node.js & npm
 -   Supabase Account & CLI (`npm install -g supabase`)
--   Vercel Account
+-   Netlify Account
 -   Google Cloud Project with OAuth 2.0 credentials
 -   OpenAI API Key
--   Comet Opik API Key
 
 ### Local Development
 
 1.  **Clone the repository:**
     ```bash
-    git clone ** replace **
+    git clone **insert https link**
     cd inbox-intel
     ```
 
@@ -65,7 +64,7 @@ This systematic approach allowed for rapid development while ensuring the final 
     ```
 
 4.  **Configure environment variables:**
-    Create a `.env.local` file in the `inbox-intel` directory and populate it with your keys from Supabase, Google, OpenAI, and Comet Opik.
+    Create a `.env.local` file in the `inbox-intel` directory and populate it with your keys from Supabase, Google, and OpenAI.
 
 5.  **Run the development server:**
     ```bash
@@ -76,7 +75,7 @@ This systematic approach allowed for rapid development while ensuring the final 
 
 This project uses a hybrid deployment model:
 
-1.  **Frontend & Database:** The Next.js frontend is deployed to Vercel.
+1.  **Frontend & Database:** The Vite frontend is deployed to Netlify.
 2.  **Backend Logic:** Supabase Edge Functions are deployed from the local machine using the Supabase CLI:
     ```bash
     supabase functions deploy --project-ref <your-project-ref>
